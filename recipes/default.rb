@@ -67,7 +67,7 @@ node['homebrewalt']['taps'].each do |tap|
   homebrewalt_tap tap
 end
 
-directory "/opt/homebrew-cask/Caskroom" do
+directory "/usr/local/Caskroom" do
     user node['current_user']
     mode 00755
     recursive true
